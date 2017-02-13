@@ -1,0 +1,53 @@
+html {
+    font: 12px/1.5 "Segoe UI light", Helvetica, Arial, sans-serif;
+}
+body {
+    margin: 0 0 100px;
+    padding: 25px;
+    background-color: #6996AD;
+}
+/* ##################################################################### */
+
+li {
+    float: left;
+}
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 13px 15px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+footer {
+    background-color: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    overflow:hidden;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+h1 {
+    padding-top: 40px;
+    margin: 20px;
+    font-weight: lighter;
+}
+
+/* ######################################################################## */
