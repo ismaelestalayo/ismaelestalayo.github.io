@@ -4,41 +4,50 @@ html {
 body {
     margin: 0 0 100px;
     padding: 25px;
-    background-color: #6996AD;
+    background-color: #519fe3;
 }
 /* ##################################################################### */
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     background-color: #333;
+    min-height: 50px;
+    max-height: 50px;
 }
-    li a.tw :hover:not(.active){
-        background-color: deepskyblue;
-        
+    li a.tw{
+        padding: 1.45%;
     }
-    li a {
+    li a.normal {
         float: left;
-        display: block;
         color: white;
         text-align: center;
-        padding: 10px 15px;
+        padding: 15px 20px;
         text-decoration: none;
+    }
+    li a.about {
+        float: right;
+        color: white;
+        text-align: center;
+        padding: 0px 15px;
+        text-decoration: none;
+        background-color: #222;
+        padding: 15px;
     }
     li a:hover:not(.active) {
         background-color: #111;
+        border-bottom: 3px solid white;
     }
 
 footer {
-    background-color: skyblue;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     text-align: center;
-    height: 40px;
+    height: 35px;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 .img-circle {
     border-radius: 50%;
@@ -49,17 +58,13 @@ h1 {
     margin: 20px;
     font-weight: lighter;
 }
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+/* ######################################################## */
 
-/* ######################################################################## */
-.header .menu ul {
-    margin:33px 10px 0 0;
-    padding:0;
-    float:right;
-    width:auto;
-    height:12px;
-    list-style:none;
-}
-.header .menu ul li {
-    margin:0 4px;
-    float:right;
-}
+
+
+
+
