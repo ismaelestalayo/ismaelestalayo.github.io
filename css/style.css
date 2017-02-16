@@ -17,7 +17,7 @@ ul {
     max-height: 50px;
 }
     li a.tw{
-        padding: 1.65%;
+        padding: inherit;
     }
     li a.normal {
         float: left;
