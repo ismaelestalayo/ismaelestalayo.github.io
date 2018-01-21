@@ -4,60 +4,43 @@ html {
 body {
     margin: 0 0 100px;
     padding: 25px;
-    background-color: #519fe3;
+    background-color: #FDFDFD;
+    /*background-image: linear-gradient(19deg, #ffffff 0%, #dddddd 100%);*/
+    
 }
 /* ##################################################################### */
-ul {
+ul.topnav {
     list-style-type: none;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
-    min-height: 50px;
-    max-height: 50px;
 }
-    li a.tw{
-        padding: inherit;
-    }
-    li a.normal {
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 15px 20px;
-        text-decoration: none;
-    }
-    li a.actual{
-        float: left;
-        color: white;
-        text-align: center;
-        padding: 15px 20px;
-        text-decoration: none;
-        background-color: #111;
-        border-bottom: 3px solid white;
-    }
-    li a.about {
-        float: right;
-        color: white;
-        text-align: center;
-        padding: 0px 15px;
-        text-decoration: none;
-        background-color: #222;
-        padding: 15px;
-    }
-    li a:hover:not(.active) {
-        background-color: #111;
-        border-bottom: 3px solid white;
-    }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
     text-align: center;
-    height: 35px;
-    width: 100%;
-    overflow: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #1A1A1A;
+    border-bottom: 4px solid rgb(28, 77, 94);
+}
+
+ul.topnav li a.normal {
+    color: rgb(185, 185, 185);
+}
+ul.topnav li a.active {
+    background-color: #111;
+    border-bottom: 4px solid #166E8C;
+    color: white;
+}
+
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -71,8 +54,39 @@ h1 {
     margin: 20px;
     font-weight: lighter;
 }
-/* ######################################################## */
 
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0px;
+    background-color: #efefef;
+    text-align: center;
+  }
+/* ######################################################## */
+.column33 {
+    float: left;
+    width: 33.33%;
+}
+.column66 {
+    float: left;
+    width: 66.66%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 
 
 
