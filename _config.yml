@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Ismael Estalayo"
 title_separator          : "-"
 name                     : "Ismael Estalayo"
 description              : "An amazing website."
@@ -92,18 +92,18 @@ analytics:
 author:
   name             : "Ismael Estalayo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "👨🏻‍💻engineer — 📸photographer — 🤖maker"
+  location         : "Bilbao - Spain"
+  email            : "ismael.em@outlook.com"
+  uri              : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
+  flickr           : "https://www.flickr.com/photos/127539761@N05/"
   facebook         :
   foursquare       :
-  github           :
+  github           : "github.com/ismaelestalayo"
   gitlab           :
   google_plus      :
   keybase          :
@@ -255,7 +255,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
