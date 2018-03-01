@@ -91,7 +91,7 @@ analytics:
 # Site Author
 author:
   name             : "Ismael Estalayo"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "👨🏻‍💻engineer — 📸photographer — 🤖maker"
   location         : "Bilbao - Spain"
   email            : "ismael.em@outlook.com"
@@ -100,10 +100,10 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           : "https://www.flickr.com/photos/127539761@N05/"
+  flickr           : "photos/127539761@N05/"
   facebook         :
   foursquare       :
-  github           : "github.com/ismaelestalayo"
+  github           : "ismaelestalayo"
   gitlab           :
   google_plus      :
   keybase          :
