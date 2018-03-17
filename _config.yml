@@ -1,9 +1,9 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Ismael Estalayo
+bio: engineer - photographer - maker
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A blog about my personal projects
 
 # if it's an external image, update below for true
 # better with square images
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://ismaelestalayo.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -31,31 +31,31 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: #[blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+# facebook: myfacebook
+twitter: isma_estalayo
 # google: mygoogle
-# instagram: myinstagram
+instagram: ismaestalayo
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: ismaelestalayo
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: ismael.em@outlook.com
 
 authors:
     johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+        name: Ismael Estalayo
+        bio: no-bio2
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
