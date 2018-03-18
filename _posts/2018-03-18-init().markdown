@@ -1,17 +1,19 @@
 ---
-title: "Markdown Common Elements"
+title: "init()"
 layout: post
-date: 2016-02-24 22:44
+date: 2018-03-18 01:49
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- Machine Learning
+- Crypto
+- Python
 star: true
-category: blog
-author: johndoe
-description: Markdown summary with different options
+category: MachineLearning
+author: Ismael Estalayo
+description: First blog entry
 ---
+
 # Predicting crypto-currency prices and applying to portfolio optimization theory
 
 
