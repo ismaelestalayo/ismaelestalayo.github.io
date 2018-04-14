@@ -3,17 +3,23 @@ layout: page
 title: Projects 
 ---
 
+<style>
+    /* .mySlides {
+        display:none;
+    } */
+</style>
+
 <section class="list">
-    <h1 style="font-size:40px; font-weight: lighter">
+    <h1 style="font-size:42px; font-weight: lighter">
         <img src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/CryptoTracker%20400.png"
-            width="7%" style="float: left; padding: 0px 10px 0px 0px"> CryptoTracker
+            width="10%" style="padding-right: 10px; vertical-align: middle" title="yo"> CryptoTracker
     </h1>
 
     <p style="text-align:center">
         <img src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo_transparent.png" width="100%">
     </p>
 
-    <div class="row" style="font-size: 13px">
+    <!-- <div class="row" style="font-size: 13px">
         <div class="column33">
             <h2>Features</h2>
             <ul>
@@ -27,7 +33,7 @@ title: Projects
         <div class="column66">
 
         </div>
-    </div>
+    </div> -->
 
     <p style="text-align:center">
         <a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge">
@@ -37,15 +43,39 @@ title: Projects
     </p>
 
 
-    <div style="background-color: #f1f1f1; color: black; overflow: auto;">
-        <div class="w3-col m6" style="width: 30%; float: right">
-            <h3>We know design.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                <br>tempor incididunt ut labore et dolore.</p>
+    <div style="background-color: #e8e8e8; color: black; overflow: auto;">
+        <div style="width: 40%; float: right; margin-top: 7%">
+            <h2>Features:</h2>
+            <p> ■ Hourly/daily/weekly/monthly/yearly charts. <br/><br/> 
+                ■ Support for more than 100+ crypto-coins including BTC, ETH, LTC and more! <br/><br/> 
+                ■ Portfolio section to keep track of your transactions. <br/><br/> 
+                ■ Currencies: EUR, USD, GBP, CAD, AUD, CHY... <br/><br/> 
+                ■ Beautiful light and dark themes. <br/><br/> 
+            </p>
         </div>
-        <div class="w3-col m6" style="width: 30%; float: left; max-width: 30%">
-            <img class="w3-image w3-round-large" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/Promo_phoneText1.png"
-                width="100%" style="vertical-align: middle; border-radius: 8px">
+        <div style="width: 60%; float: left; max-width: 60%">
+            <img class="mySlides" width="70%" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/Promo_phoneText1.png">
+            <img class="mySlides" width="70%" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/Promo_phoneText2.png" style="display: none;">
+            <img class="mySlides" width="70%" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/Promo_phoneText3.png" style="display: none;">
+            <img class="mySlides" width="70%" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/Promo_phoneText4.png" style="display: none;">
         </div>
     </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
 </section>
