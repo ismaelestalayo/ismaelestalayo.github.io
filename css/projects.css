@@ -1,0 +1,51 @@
+.projects-header {
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px rgba(0,0,0,0.16);
+    display: grid;
+    height: 40vw;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img descr";
+}
+
+.heroImg{
+    width: 60vw;
+    vertical-align: middle;
+    margin: auto;
+    grid-area: "img";
+}
+.heroDescr{
+    margin: auto 30px auto 0;
+    grid-area: "descr";
+}
+    .heroDescr img{
+        margin: 0 auto 5% -10px;
+        left: 0px;
+        width: 35vw;
+    }
+    .heroDescr li{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+/* --- Responsive design ---*/
+@media screen and (max-width: 720px) {
+    .projects-header{
+        height: 100%;
+        display:inline-block;
+    }
+    .heroImg{
+        width: 90%;
+        margin-top: 15%;
+    }
+    .heroDescr{
+        margin: 0 10% 20px;
+    }
+    .heroDescr img{
+        width: 50vw;
+        top: 100px;
+        position: absolute;
+        margin: 5% 25%;
+    }
+}
