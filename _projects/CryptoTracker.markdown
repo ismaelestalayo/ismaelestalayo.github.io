@@ -9,7 +9,7 @@ UWP app for the Microsoft Store to keep track of crypto-currencies, your portfol
 
 
 <div class="project_descr">
-	<img class="project_img" src="/assets/top100.png" alt="CryptoTracker-home"/>
+	<img class="project_img" src="/assets/cryptotracker/top100.png" alt="CryptoTracker-home"/>
 	<div class="project_explanation">
 		<h1>Supports over 100 cryptocurrencies</h1>
 		<h5>Keep up to date with Bitcoin, Ethereum, Litecoin... and over a hundred alt-coins, all supporting the main exchanges and currencies all over the world.</h5>
@@ -17,7 +17,7 @@ UWP app for the Microsoft Store to keep track of crypto-currencies, your portfol
 </div>
 
 <div class="project_descr">
-	<img class="project_img" src="/assets/details.png" alt="CryptoTracker-home"/>
+	<img class="project_img" src="/assets/cryptotracker/details.png" alt="CryptoTracker-home"/>
 	<div class="project_explanation">
 		<h1>Detailed overview</h1>
 		<h5>Compare the prices of the main exchanges, watch the traded volume of the last 24h, read information about the coin...</h5>
@@ -25,7 +25,7 @@ UWP app for the Microsoft Store to keep track of crypto-currencies, your portfol
 </div>
 
 <div class="project_descr">
-	<img class="project_img" src="/assets/portfolio.png" alt="CryptoTracker-home"/>
+	<img class="project_img" src="/assets/cryptotracker/portfolio.png" alt="CryptoTracker-home"/>
 	<div class="project_explanation">
 		<h1>Your portfolio at a glance</h1>
 		<h5>Keep track of your purchases with the Portfolio section, and stay up to date with

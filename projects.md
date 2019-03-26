@@ -7,7 +7,7 @@ permalink: /projects/
 
 
 <div class="projects-hero-container">
-	<img class="projects-hero-logo" src="/assets/CryptoTracker-wideLogo.png">
+	<img class="projects-hero-logo" src="/assets/cryptotracker/CryptoTracker-wideLogo.png">
 	<img class="projects-hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/LaptopFront%20homeLT.png"/>
 	<div class="project-hero-descr">
 		<span>
