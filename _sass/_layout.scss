@@ -411,3 +411,23 @@
     margin-right: auto;
     text-align:center;
 }
+
+/* ####################################
+			About page 
+#################################### */
+.about-container{
+	img{
+		border-radius: 50%; 
+		width: 200px; 
+		margin-bottom: 20px;
+	}
+	h1{
+		margin: 1% 10%; 
+		font-weight: 800; 
+		font-size: 24px
+	}
+	h1, h2, h3, h4, h5{
+		margin: 2% 10%;
+		line-height: 1.3em;
+	}
+}
