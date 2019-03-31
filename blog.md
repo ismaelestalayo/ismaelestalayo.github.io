@@ -10,7 +10,7 @@ description: Thoughts, tutorials, discussions...
 {% if post.visible == true  %}
     <li>
         <h2><a class="poem-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
       </li>
 {% endif  %}
 {% endfor %}
