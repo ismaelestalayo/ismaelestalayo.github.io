@@ -4,9 +4,22 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
-    padding: 0;
+	padding: 0;
 }
 
+p{
+	font-size: 1.3em;
+	font-stretch: condensed;
+	line-height: 1.5em;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	text-align: justify;
+}
+table{
+	font-size: 14px;
+}
 
 
 /** Variables **********************************************/
