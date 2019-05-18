@@ -2,7 +2,7 @@
 layout: page
 permalink: /blog/
 title: Blog
-description: Thoughts, tutorials, discussions...
+description: 
 ---
 
 <ul class="post-list">

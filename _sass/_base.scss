@@ -155,18 +155,12 @@ pre {
 
 /***** Wrapper ***********************************************************/
 .wrapper {
-    max-width: -webkit-calc(1000px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(1000px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(1200px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(1200px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
 	padding: 0 7%;	// small padding on the sides
     @extend %clearfix;
-
-	// stop growth with max-width on large displays
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(1500px - (#{$horizontal-spacing-unit}));
-        max-width:         calc(1500px - (#{$horizontal-spacing-unit}));
-    }
 }
 
 /***** Clearfix ***********************************************************/

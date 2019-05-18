@@ -8,7 +8,7 @@ permalink: /projects/
 
 <div class="projects-hero-container">
 	<img class="projects-hero-logo" src="/assets/cryptotracker/CryptoTracker-wideLogo.png">
-	<img class="projects-hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/LaptopFront%20homeLT.png"/>
+	<img class="projects-hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_light_transp.png"/>
 	<div class="project-hero-descr">
 		<span>
 			<li>Support for more than 100+ crypto-coins including alt-coins.</li>
