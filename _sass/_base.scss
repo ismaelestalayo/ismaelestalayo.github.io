@@ -44,6 +44,8 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 $black: #222222;
 
+$dark-teal: #236178;
+
 
 $grey-color-dark: #333;   /* footer */
 $grey-color-light: #ddd;  /* navigation bar border */
@@ -63,6 +65,16 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+}
+
+/* Dark mode styles. */
+
+body.dark {
+	color: #f0f0f0;
+	background-color: #202020;
+	a{
+		color: #f0f0f0;
+	}
 }
 
 
@@ -101,13 +113,12 @@ a {
     color: $text-color;
     text-decoration: none;
     &:hover {
-        color: $theme-color;
         text-decoration: none;
     }
 }
 
 article a {
-    color: $theme-color;
+    color: $dark-teal;
     font-weight: 100;
 
     &:hover {
