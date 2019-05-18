@@ -9,17 +9,15 @@
         <a href="{{ site.baseurl }}/">Home</a>
 
         {% for page in site.pages %}
-          {% if page.title and page.title != "About" %}
+          {% if page.title %} <!-- and page.title != "About" %}  -->
           <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
 		{% endfor %}
 		
 		<div class="site-nav-right">
-			<h3 style="font-weight: 600">Ismael Estalayo</h3>
-			<a href="{{ site.baseurl }}/about" style="border-bottom: none;">
-				<img src="/assets/profile1.jpg" 
-				style="width: 45px; border-radius: 50%; vertical-align: middle;
-				display: inline"/>
+			<h3>Ismael Estalayo</h3>
+			<a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')">
+				<img src="/assets/profile1.jpg"/>
 			</a>
 		</div>
 		
@@ -30,3 +28,4 @@
   </div>
 
 </header>
+

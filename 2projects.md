@@ -4,11 +4,9 @@ title: Projects
 permalink: /projects/
 ---
 
-
-
 <div class="projects-hero-container">
-	<img class="projects-hero-logo" src="/assets/cryptotracker/CryptoTracker-wideLogo.png">
-	<img class="projects-hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_light_transp.png"/>
+	<img id="hero-logo" class="projects-hero-logo" src="/assets/cryptotracker/logo-wide-dark.png">
+	<img id="hero-img" class="projects-hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_light_transp.png"/>
 	<div class="project-hero-descr">
 		<span>
 			<li>Support for more than 100+ crypto-coins including alt-coins.</li>
@@ -22,6 +20,13 @@ permalink: /projects/
 		</div>
 	</div>
 </div>
+
+<script>
+	if(window.localStorage.getItem("mode") == "dark"){
+		document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_dark_transp.png";
+	}
+</script>
 
 <!-- {% for project in site.projects %}
 
