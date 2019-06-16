@@ -39,11 +39,23 @@ Simple yet powerful crypto-currency tracker for Windows 10.
 	</a>
 </div>
 
-
 <script>
-	if(window.localStorage.getItem("mode") == "dark"){
-		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
-		document.getElementById("gridRow2").src = "/assets/cryptotracker/details_dark.png";
-		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
-	}	
+	function changeTheme(){
+		localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); 
+		localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+		applyTheme();
+	}
+	
+	function applyTheme(){
+		if(window.localStorage.getItem("mode") == "dark"){
+			document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
+			document.getElementById("gridRow2").src = "/assets/cryptotracker/details_dark.png";
+			document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
+		} else{
+			document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_light.png";
+			document.getElementById("gridRow2").src = "/assets/cryptotracker/details_light.png";
+			document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_light.png";
+		}
+	}
+	applyTheme();
 </script>

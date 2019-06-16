@@ -1,31 +1,26 @@
 <header class="site-header">
-
-  <div>
-
-    <nav class="site-nav">
-
-      <div class="trigger">
-        <!-- {{ site.title }} instead of blog -->
-        <a href="{{ site.baseurl }}/">Home</a>
-
-        {% for page in site.pages %}
-          {% if page.title %} <!-- and page.title != "About" %}  -->
-          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-		{% endfor %}
+	<div>
 		
-		<div class="site-nav-right">
-			<h3>Ismael Estalayo</h3>
-			<a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')">
-				<img src="/assets/profile1.jpg"/>
-			</a>
-		</div>
-		
+		<nav class="site-nav">
+			<div class="trigger">
+				<a href="{{ site.baseurl }}/">Home</a>
 
-      </div>
-    </nav>
+				{% for page in site.pages %}
+				{% if page.title %}
+				<!-- and page.title != "About" %}  -->
+				<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+				{% endif %}
+				{% endfor %}
 
-  </div>
+				<div class="site-nav-right">
+					<h3>Ismael Estalayo</h3>
+					<a
+						onclick="changeTheme()">
+						<img src="/assets/profile1.jpg" />
+					</a>
+				</div>
+			</div>
+		</nav>
 
+	</div>
 </header>
-

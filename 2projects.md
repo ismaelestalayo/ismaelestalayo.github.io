@@ -22,10 +22,22 @@ permalink: /projects/
 </div>
 
 <script>
-	if(window.localStorage.getItem("mode") == "dark"){
-		document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
-		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_dark.png";
+	function changeTheme(){
+		localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); 
+		localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+		applyTheme();
 	}
+	
+	function applyTheme(){
+		if(window.localStorage.getItem("mode") == "dark"){
+			document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
+			document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_dark.png";
+		} else{
+			document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-dark.png";
+			document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/Screenshots/promo/Laptop_front_home_light.png";
+		}
+	}
+	applyTheme();
 </script>
 
 <!-- {% for project in site.projects %}
