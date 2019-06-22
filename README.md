@@ -5,4 +5,4 @@ Testing GitHub addon for VisualStudio Code
 
 ```
 bundle exec jekyll serve
-```
+<!-- ``` -->

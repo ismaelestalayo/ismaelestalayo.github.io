@@ -41,8 +41,6 @@ Simple yet powerful crypto-currency tracker for Windows 10.
 
 <script>
 	function changeTheme(){
-		localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); 
-		localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
 		applyTheme();
 	}
 	
