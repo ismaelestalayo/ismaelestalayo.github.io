@@ -65,9 +65,12 @@ body {
     color: $text-color;
     background-color: $background-color;
 	-webkit-text-size-adjust: 100%;
-	// No horizontal scrolling
+}
+
+// No horizontal scrolling
+html, body{
 	max-width: 100%;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 /* Dark mode styles. */
