@@ -47,12 +47,16 @@ $black: #222222;
 $dark-teal: #236178;
 
 
-$grey-color-dark: #333;   /* footer */
 $grey-color-light: #ddd;  /* navigation bar border */
-$text-color:     #333;
+
 
 /* Set theme color *************************/
 $theme-color:   $black;
+$dark-theme-bg: #202020;
+$dark-theme-fg: #f0f0f0;
+
+$light-theme-bg: #f0f0f0;
+$light-theme-fg: #333333;
 
 
 
@@ -62,8 +66,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 100;
-    color: $text-color;
-    background-color: $background-color;
+    color: $light-theme-fg;
+    background-color: $light-theme-bg;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -76,10 +80,14 @@ html, body{
 /* Dark mode styles. */
 
 body.dark {
-	color: #f0f0f0;
-	background-color: #202020;
+	color: $dark-theme-fg;
+	background-color: $dark-theme-bg;
 	a{
-		color: #f0f0f0;
+		color: $dark-theme-fg;
+	}
+	pre,
+	code{
+		background-color: darken($dark-theme-bg, 5%);
 	}
 }
 
@@ -116,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /***** Links ***********************************************************/
 a {
-    color: $text-color;
+    color: $light-theme-fg;
     text-decoration: none;
     &:hover {
         text-decoration: none;
@@ -134,7 +142,7 @@ article a {
 
 /***** Blockquotes ***********************************************************/
 blockquote {
-    color: $text-color;
+    color: $light-theme-fg;
     border-left: 10px solid $grey-color-light;
     padding-left: $horizontal-spacing-unit / 2;
     font-size: 18px;
@@ -151,7 +159,7 @@ pre,
 code {
     font-size: 15px;
     border-radius: 3px;
-    background-color: $grey-color-light;
+    background-color: lighten($light-theme-bg, 5%);
 }
 
 code {
@@ -159,7 +167,7 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
+    padding: 12px 14px;
     overflow-x: scroll;
 
     > code {
