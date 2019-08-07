@@ -44,7 +44,7 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 $black: #222222;
 
-$dark-teal: #236178;
+$accent-color: #236178;
 
 
 $grey-color-light: #ddd;  /* navigation bar border */
@@ -53,9 +53,11 @@ $grey-color-light: #ddd;  /* navigation bar border */
 /* Set theme color *************************/
 $theme-color:   $black;
 $dark-theme-bg: #202020;
+$dark-theme-bg-semi: darken($dark-theme-bg, 5%);
 $dark-theme-fg: #f0f0f0;
 
 $light-theme-bg: #f0f0f0;
+$light-theme-bg-semi: lighten($light-theme-bg, 5%);
 $light-theme-fg: #333333;
 
 
@@ -87,7 +89,7 @@ body.dark {
 	}
 	pre,
 	code{
-		background-color: darken($dark-theme-bg, 5%);
+		background-color: $dark-theme-bg-semi;
 	}
 }
 
@@ -132,8 +134,9 @@ a {
 }
 
 article a {
-    color: $dark-teal;
-    font-weight: 100;
+    color: $accent-color !important;
+	font-weight: 400;
+	text-decoration: $accent-color underline;
 
     &:hover {
         text-decoration: none;
@@ -143,7 +146,7 @@ article a {
 /***** Blockquotes ***********************************************************/
 blockquote {
     color: $light-theme-fg;
-    border-left: 10px solid $grey-color-light;
+    border-left: 10px solid lighten($light-theme-bg, 5%);
     padding-left: $horizontal-spacing-unit / 2;
     font-size: 18px;
     font-style: italic;
