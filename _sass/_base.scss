@@ -44,7 +44,7 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 $black: #222222;
 
-$accent-color: #236178;
+$accent-color: #0086B3;
 
 
 $grey-color-light: #ddd;  /* navigation bar border */
@@ -81,6 +81,33 @@ html, body{
 
 /* Dark mode styles. */
 
+// @media (prefers-color-scheme: dark) {
+// 	body{
+// 		color: $dark-theme-fg;
+// 		background-color: $dark-theme-bg;
+// 		a{
+// 			color: $dark-theme-fg;
+// 		}
+// 		pre,
+// 		code{
+// 			background-color: $dark-theme-bg-semi;
+// 		}
+// 	}
+// }
+
+// @media (prefers-color-scheme: light) {
+// 	body{
+// 		color: $light-theme-fg;
+// 		background-color: $light-theme-bg;
+// 		a{
+// 			color: $light-theme-fg;
+// 		}
+// 		pre,
+// 		code{
+// 			background-color: $light-theme-bg-semi;
+// 		}
+// 	}
+// }
 body.dark {
 	color: $dark-theme-fg;
 	background-color: $dark-theme-bg;
