@@ -5,7 +5,6 @@ description: a project with a background image
 img: /assets/1.jpg
 ---
 
-<!-- Simple yet powerful crypto-currency tracker for Windows 10. -->
 
 <div class="hero-img">
 </div>
