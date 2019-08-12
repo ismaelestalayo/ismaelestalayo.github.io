@@ -365,6 +365,25 @@
 	vertical-align: middle;
 	font-size: $caption_font_size;
 }
+
+.hero-img{
+	background: url('/assets/cryptotracker/hero-art.png') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	overflow: hidden;
+	z-index: -1;
+	position: relative;
+	height: 45vh;
+	margin-right: -8%;
+	margin-left: -8%;
+	@include media-query($on-laptop) {
+		margin-right: -8%;
+		margin-left: -8%;
+		height: 60vh;		
+    }
+}
+
 .project_descr{
 	display: grid;
 	grid-template-columns: 1fr 1fr;	
