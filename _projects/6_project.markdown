@@ -1,55 +1,74 @@
 ---
-layout: post
-title: Project
-description: a project with no image
-img: 
+layout: post-minimal
+
+description: Simple yet powerful crypto-currency tracker for Windows 10.
+img: /assets/1.jpg
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
+<style>
+.div1{
+	background: url('/assets/cryptotracker/hero-img.png') repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	overflow: hidden;
+	z-index: -1;
+	position: relative;
+	height: 100vh;
+	filter: blur(2px);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;"
+}
+.div2{
+	text-align: center;
+	font-size: 32px;
+	color: white;
+	font-weight: 500;
+}
+.div2 h1{
+	font-size: 7vw;
+	line-height: 1.3em;
+	filter: drop-shadow(1px 1px 4px black);
+}
+.div2 img{
+	margin-left: auto;
+	filter: drop-shadow(1px 1px 4px black);
+	display: block;
+	margin: auto;
+	margin-top: 25vh;
+	width: 90%;
+}
+</style>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so: 
-
-	---
-	layout: post
-	title: Project
-	description: a project with a background image
-	img: {{ site.baseurl }}/img/12.jpg
-	---
-
-
-<div class="img_row">
-	<img class="col one" src="{{ site.baseurl }}/img/1.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/2.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/3.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/5.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	This image can also have a caption. It's like magic. 
-</div>
-
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
-
-
-<div class="img_row">
-	<img class="col two" src="{{ site.baseurl }}/img/6.jpg" alt="" title="example image"/>
-	<img class="col one" src="{{ site.baseurl }}/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-	You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-<br/><br/><br/>
-
-
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above: 
-
-	<div class="img_row">
-	  <img class="col two" src="/img/6.jpg"/>
-	  <img class="col one" src="/img/11.jpg"/>
+<div class="page-content" style="position: relative; height: 100vh; width: 100vw;">
+	<div class="div1">
 	</div>
+	<div class="div2">
+		<img src="/assets/cryptotracker/logo-wide-light.png"> <h1>Simple yet powerful crypto-currency tracker for Windows 10.</h1>
+	</div>
+	<a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge?cid=personal">
+		<img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" class="img-center" style="width: 50%; max-width: 250px; margin-top: 10vw; ">
+	</a>
+</div>
+
+<script>
+	function changeTheme(){
+		applyTheme();
+	}
+	
+	function applyTheme(){
+		if(window.localStorage.getItem("mode") == "dark"){
+			document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
+			document.getElementById("gridRow2").src = "/assets/cryptotracker/details_dark.png";
+			document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
+		} else{
+			document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_light.png";
+			document.getElementById("gridRow2").src = "/assets/cryptotracker/details_light.png";
+			document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_light.png";
+		}
+	}
+	applyTheme();
+</script>

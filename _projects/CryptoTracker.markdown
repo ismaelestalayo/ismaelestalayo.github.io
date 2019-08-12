@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crypto Tracker
-description: a project with a background image
+description: Simple yet powerful crypto-currency tracker for Windows 10.
 img: /assets/1.jpg
 ---
 
