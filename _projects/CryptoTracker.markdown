@@ -5,8 +5,10 @@ description: a project with a background image
 img: /assets/1.jpg
 ---
 
-Simple yet powerful crypto-currency tracker for Windows 10.
+<!-- Simple yet powerful crypto-currency tracker for Windows 10. -->
 
+<div class="hero-img">
+</div>
 
 <div class="project_descr">
 	<img class="project_img" id="gridRow1" src="/assets/cryptotracker/top100_light.png"/>
