@@ -51,7 +51,6 @@ $grey-color-light: #ddd;  /* navigation bar border */
 
 
 /* Set theme color *************************/
-$theme-color:   $black;
 $dark-theme-bg: #202020;
 $dark-theme-bg-semi: darken($dark-theme-bg, 5%);
 $dark-theme-fg: #f0f0f0;
@@ -86,12 +85,11 @@ html, body{
 /*************** Dark/Light themes
 ***********************************************************/
 @media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6, body, a {
+        color: $dark-theme-fg;
+    }
 	body {
-		color: $dark-theme-fg;
 		background-color: $dark-theme-bg;
-		a{
-			color: $dark-theme-fg;
-		}
 		pre,
 		code{
 			background-color: $dark-theme-bg-semi;
@@ -100,12 +98,11 @@ html, body{
 }
 
 @media (prefers-color-scheme: light) {
+    h1, h2, h3, h4, h5, h6, body, a {
+        color: $light-theme-fg;
+    }
 	body{
-		color: $light-theme-fg;
 		background-color: $light-theme-bg;
-		a{
-			color: $light-theme-fg;
-		}
 		pre,
 		code{
 			background-color: $light-theme-bg-semi;
@@ -147,7 +144,6 @@ h1, h2, h3, h4, h5, h6 {
 /*************** Links
 ***********************************************************/
 a {
-    color: $light-theme-fg;
     text-decoration: none;
     &:hover {
         text-decoration: none;

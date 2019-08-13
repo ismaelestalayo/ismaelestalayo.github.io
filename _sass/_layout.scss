@@ -105,9 +105,6 @@
 
 /***** projects page ***********************************************************/
 .projects-hero-container{
-	// background-color: #f0f0f0;
-	// margin-left:  -8%;
-	// margin-right: -8%;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto auto;
@@ -198,9 +195,6 @@
 }
 .paginationicon {
 	font-size: 50px;
-	a {
-		color: $theme-color;
-    }
 }
 
 /***** Page content ***********************************************************/
@@ -334,9 +328,6 @@
 }
 
 /***** Portfolio pages ***********************************************************/
-.blankbox{
-	background: $theme-color;
-}
 .img_row{
 	width: 100%;
 	overflow: hidden;

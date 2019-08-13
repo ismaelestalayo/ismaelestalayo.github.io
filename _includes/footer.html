@@ -26,6 +26,7 @@
     	const darkModeOn = e.matches;
 		// this functions are to be created on each HTML that needs to make changes that CSS can't
     	darkModeOn ? darkTheme() : lightTheme();
-  });
+	});
+	darkModeMediaQuery.matches ? darkTheme() : lightTheme();
 </script>
 		
