@@ -388,7 +388,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;	
 	grid-template-rows: 1fr;
-	margin: 2% 0px;	
+	padding: 2% 0px;	
 	@media screen and (max-width: $on-laptop) {
 		grid-template-columns: 1fr !important; 
 		grid-template-rows: auto auto !important;

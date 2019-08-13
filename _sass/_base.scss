@@ -62,7 +62,8 @@ $light-theme-fg: #333333;
 
 
 
-/***** Basic styling ***********************************************************/
+/*************** Basic styling
+***********************************************************/
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -82,48 +83,35 @@ html, body{
 	overflow-x: hidden;
 }
 
-/* Dark mode styles. */
-
-// @media (prefers-color-scheme: dark) {
-// 	body{
-// 		color: $dark-theme-fg;
-// 		background-color: $dark-theme-bg;
-// 		a{
-// 			color: $dark-theme-fg;
-// 		}
-// 		pre,
-// 		code{
-// 			background-color: $dark-theme-bg-semi;
-// 		}
-// 	}
-// }
-
-// @media (prefers-color-scheme: light) {
-// 	body{
-// 		color: $light-theme-fg;
-// 		background-color: $light-theme-bg;
-// 		a{
-// 			color: $light-theme-fg;
-// 		}
-// 		pre,
-// 		code{
-// 			background-color: $light-theme-bg-semi;
-// 		}
-// 	}
-// }
-body.dark {
-	color: $dark-theme-fg;
-	background-color: $dark-theme-bg;
-	a{
+/*************** Dark/Light themes
+***********************************************************/
+@media (prefers-color-scheme: dark) {
+	body {
 		color: $dark-theme-fg;
-	}
-	pre,
-	code{
-		background-color: $dark-theme-bg-semi;
+		background-color: $dark-theme-bg;
+		a{
+			color: $dark-theme-fg;
+		}
+		pre,
+		code{
+			background-color: $dark-theme-bg-semi;
+		}
 	}
 }
 
-
+@media (prefers-color-scheme: light) {
+	body{
+		color: $light-theme-fg;
+		background-color: $light-theme-bg;
+		a{
+			color: $light-theme-fg;
+		}
+		pre,
+		code{
+			background-color: $light-theme-bg-semi;
+		}
+	}
+}
 
 
 .alignright {
@@ -139,7 +127,8 @@ hr{
 
 }
 
-/***** Figures ***********************************************************/
+/*************** Figures
+***********************************************************/
 figure > img {
     display: block;
 }
@@ -149,12 +138,14 @@ figcaption {
 }
 
 
-/***** Headings ***********************************************************/
+/*************** Headings
+***********************************************************/
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
-/***** Links ***********************************************************/
+/*************** Links
+***********************************************************/
 a {
     color: $light-theme-fg;
     text-decoration: none;
@@ -173,7 +164,8 @@ article a {
     }
 }
 
-/***** Blockquotes ***********************************************************/
+/*************** Blockquotes
+***********************************************************/
 blockquote {
     color: $light-theme-fg;
     border-left: 10px solid lighten($light-theme-bg, 5%);
@@ -187,7 +179,8 @@ blockquote {
 }
 
 
-/***** Code formatting ***********************************************************/
+/*************** Code formatting
+***********************************************************/
 pre,
 code {
     font-size: 15px;
@@ -211,17 +204,19 @@ pre {
 }
 
 
-/***** Wrapper ***********************************************************/
+/*************** Wrapper
+***********************************************************/
 .wrapper {
     max-width: -webkit-calc(1200px - (#{$horizontal-spacing-unit} * 2));
     max-width:         calc(1200px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-	padding: 0 7%;	// small padding on the sides
+	padding: 0 7%;		// small padding on the sides
     @extend %clearfix;
 }
 
-/***** Clearfix ***********************************************************/
+/*************** Clearfix
+***********************************************************/
 %clearfix {
     &:before,
     &:after {
