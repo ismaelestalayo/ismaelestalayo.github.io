@@ -22,21 +22,14 @@ permalink: /projects/
 </div>
 
 <script>
-	function changeTheme(){
-		
-		applyTheme();
+	function lightTheme(){
+		document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-dark.png";
+		document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_light.png";
 	}
-	
-	function applyTheme(){
-		if(window.localStorage.getItem("mode") == "dark"){
-			document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
-			document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_dark.png";
-		} else{
-			document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-dark.png";
-			document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_light.png";
-		}
+	function darkTheme(){
+		document.getElementById("hero-logo").src = "/assets/cryptotracker/logo-wide-light.png";
+		document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_dark.png";
 	}
-	applyTheme();
 </script>
 
 <!-- {% for project in site.projects %}
