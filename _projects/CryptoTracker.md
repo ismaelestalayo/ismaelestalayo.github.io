@@ -21,12 +21,7 @@ img: /assets/1.jpg
 	right: 0;
 	top: 0;
 	z-index: -1;
-	min-width: 100%;
-  	min-height: 100%;
 	-webkit-mask-image: linear-gradient(0deg, transparent 0%, black 100vh);
-}
-@media (max-width: 700px) {
-	.hero-blur-background {	background-attachment: scroll; }
 }
 
 .hero-blur-descr{
@@ -38,9 +33,8 @@ img: /assets/1.jpg
 .hero-blur-descr h1{
 	font-size: 1em;
 	line-height: 1.3em;
-	margin: auto;
-	text-align: justify;
-	text-align-last: center;
+	margin: 5vw auto;
+	text-align: center;
 	width: 80%;
 }
 .hero-blur-descr img{
@@ -48,7 +42,11 @@ img: /assets/1.jpg
 	display: block;
 	margin: auto;
 	margin-top: 25vh;
-	width: 90%;
+	width: 75%;
+}
+@media (max-width: 700px) {
+	.hero-blur-background {	background-attachment: scroll; }
+	.hero-blur-descr img{ width: 95%; }
 }
 
 @media (prefers-color-scheme: light){
@@ -68,12 +66,12 @@ img: /assets/1.jpg
 		<img id="hero-img" src="/assets/cryptotracker/logo-wide-light.png">
 		<h1>Simple yet powerful cryptocurrency tracker for Windows 10</h1>
 		<a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge?cid=personal">
-		<img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" class="img-center" style="max-width: 250px; margin-top: 6vw; width: 50vw;">
+		<img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" class="img-center" style="max-width: 250px; margin-top: 10vw; width: 50vw;">
 	</a>
 	</div>
 </div>
 
-<div class="page-content" style="margin: 0 5%">
+<div class="page-content" style="margin: 0 5%; margin-top: -75px">
 	<div class="project_descr">
 		<img class="project_img" id="gridRow1" src="/assets/cryptotracker/top100_light.png"/>
 		<div class="project_explanation">
