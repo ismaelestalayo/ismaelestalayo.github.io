@@ -21,8 +21,14 @@ img: /assets/1.jpg
 	right: 0;
 	top: 0;
 	z-index: -1;
-	-webkit-mask-image: linear-gradient(0deg, transparent 0%, black 100vh)
+	min-width: 100%;
+  	min-height: 100%;
+	-webkit-mask-image: linear-gradient(0deg, transparent 0%, black 100vh);
 }
+@media (max-width: 700px) {
+	.hero-blur-background {	background-attachment: scroll; }
+}
+
 .hero-blur-descr{
 	color: white;
 	font-size: 32px;
