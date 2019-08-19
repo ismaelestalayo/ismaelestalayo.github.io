@@ -1,10 +1,21 @@
 
+/* Set theme color *************************/
+$dark-theme-bg: #202020;
+$dark-theme-bg-semi: darken($dark-theme-bg, 5%);
+$dark-theme-fg: #f0f0f0;
+
+$light-theme-bg: #f0f0f0;
+$light-theme-bg-semi: lighten($light-theme-bg, 5%);
+$light-theme-fg: #333333;
+
+
 /***** Reset some basic elements ***********************************************************/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure, a {
     margin: 0;
-	padding: 0;
+    padding: 0;
+    color: $light-theme-fg;
 }
 
 p{
@@ -48,16 +59,6 @@ $accent-color: #0086B3;
 
 
 $grey-color-light: #ddd;  /* navigation bar border */
-
-
-/* Set theme color *************************/
-$dark-theme-bg: #202020;
-$dark-theme-bg-semi: darken($dark-theme-bg, 5%);
-$dark-theme-fg: #f0f0f0;
-
-$light-theme-bg: #f0f0f0;
-$light-theme-bg-semi: lighten($light-theme-bg, 5%);
-$light-theme-fg: #333333;
 
 
 
