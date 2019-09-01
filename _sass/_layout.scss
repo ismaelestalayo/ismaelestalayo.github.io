@@ -141,7 +141,6 @@
 	a{
 		font-size: 1.2rem;
 		text-align: center;
-		text-decoration: underline;
 	}
 }
 @media screen and (max-width: $on-laptop) {
@@ -159,7 +158,10 @@
     }
     .project-hero-descr{
         margin: 0 5% 20px;
-    }
+	}
+	.projects-hero-logo{
+		width: 80%;
+	}
 }
 
 /***** Site footer ***********************************************************/

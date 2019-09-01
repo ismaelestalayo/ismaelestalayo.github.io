@@ -161,10 +161,11 @@ a {
 article a {
     color: $accent-color !important;
 	font-weight: 400;
-	text-decoration: $accent-color underline;
+    text-decoration: $accent-color;
+    text-shadow: 0px 0px 20px $accent-color;
 
     &:hover {
-        text-decoration: none;
+        text-shadow: 0px 0px 25px lighten($accent-color, 20%);
     }
 }
 
