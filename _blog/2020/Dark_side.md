@@ -29,7 +29,7 @@ While the CSS media query `prefers-color-scheme: light` is really handy for quic
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   	darkModeMediaQuery.addListener((e) => {
     	const darkModeOn = e.matches;
-		// this functions are to be created on each HTML that needs to make changes that CSS can't
+		// this functions are to be created on each HTML that needs to make changes that can't be made in the CSS
     	darkModeOn ? darkTheme() : lightTheme();
   });
 </script>	
