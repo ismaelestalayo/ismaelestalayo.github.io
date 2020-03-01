@@ -82,6 +82,15 @@ body {
 	height: 100%;
 	perspective: 1px;
 	transform-style: preserve-3d;
+    
+    --duration: 0.5s;
+    --timing: ease;
+    color: var(--color);
+    background-color: var(--background-color);
+
+    transition:
+        color var(--duration) var(--timing),
+        background-color var(--duration) var(--timing);
 }
 
 // No horizontal scrolling
