@@ -6,10 +6,9 @@
 				<a href="{{ site.baseurl }}/">Home</a>
 
 				{% for page in site.pages %}
-				{% if page.title %}
-				<!-- and page.title != "About" %}  -->
-				<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-				{% endif %}
+					{% if page.title and page.visible %} 
+						<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+					{% endif %}
 				{% endfor %}
 
 				<div class="site-nav-right">

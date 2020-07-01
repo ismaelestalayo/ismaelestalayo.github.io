@@ -2,6 +2,7 @@
 layout: page
 permalink: /blog/
 title: Blog
+visible: true
 description: 
 ---
 
