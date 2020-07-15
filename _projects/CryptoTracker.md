@@ -29,6 +29,8 @@ img: /assets/1.jpg
 	font-size: 32px;
 	font-weight: 500;
 	text-align: center;
+	max-width: 66%;
+	margin: auto;
 }
 .hero-blur-descr h1{
 	font-size: 1em;
@@ -71,7 +73,7 @@ img: /assets/1.jpg
 	</div>
 </div>
 
-<div class="page-content" style="margin: 0 5%; margin-top: -75px">
+<div class="page-content" style="margin: 0 5%;">
 	<div class="project_descr">
 		<img class="project_img" id="gridRow1" src="/assets/cryptotracker/top100_light.png"/>
 		<div class="project_explanation">
