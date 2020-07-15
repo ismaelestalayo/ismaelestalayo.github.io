@@ -29,7 +29,7 @@ img: /assets/1.jpg
 	font-size: 32px;
 	font-weight: 500;
 	text-align: center;
-	max-width: 66%;
+	max-width: 1440px;
 	margin: auto;
 }
 .hero-blur-descr h1{
