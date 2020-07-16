@@ -1,56 +1,57 @@
-
 /***** Site header ***********************************************************/
+
 .site-header {
-	height: 75px;
-	width:100%;
-	z-index: 50;
+    height: 75px;
+    width: 100%;
+    z-index: 50;
 }
 
 .site-title {
-	font-size: 20px;
-	line-height: $nav-height;
-	letter-spacing: -1px;
-	margin-bottom: 0;
-	&:hover {
-		text-decoration: none;
+    font-size: 20px;
+    line-height: $nav-height;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    &:hover {
+        text-decoration: none;
     }
 }
+
 .site-nav {
-	line-height: $nav-height;
-	padding: 0 3%;
-	a{
-		font-size: 16px;
-		// Gaps between nav items except on the first one
-		&:not(:first-child) {
-			margin-left: 10px;
+    line-height: $nav-height;
+    padding: 0 3%;
+    a {
+        font-size: 16px;
+        // Gaps between nav items except on the first one
+        &:not(:first-child) {
+            margin-left: 10px;
         }
-	}
-}
-.site-nav-right{
-	float: right; 
-	display: inline-flex;
-	h3{
-		font-weight: 600;
-		@include media-query(450px) {
-			display: none
-		}
-	}
-	a{
-		border-bottom: none;
-		&:hover{
-			border-bottom: none;
-		}
-		img{
-			width: 45px; 
-			border-radius: 50%; 
-			vertical-align: middle; 
-			display: inline;
-		}
-	}
-	
+    }
 }
 
-.header-bar{
+.site-nav-right {
+    float: right;
+    display: inline-flex;
+    h3 {
+        font-weight: 600;
+        @include media-query(450px) {
+            display: none
+        }
+    }
+    a {
+        border-bottom: none;
+        &:hover {
+            border-bottom: none;
+        }
+        img {
+            width: 45px;
+            border-radius: 50%;
+            vertical-align: middle;
+            display: inline;
+        }
+    }
+}
+
+.header-bar {
     left: 0px;
     top: 0px;
     position: relative;
@@ -61,396 +62,460 @@
     padding-top: 25px;
     line-height: 2em;
     z-index: 25;
-    h1{
-        font-size:38px;
+    h1 {
+        font-size: 38px;
         font-weight: 600;
         letter-spacing: -1px;
     }
-    h2{
-        font-size:14px;
+    h2 {
+        font-size: 14px;
         color: #aaa;
         font-weight: 400;
-	}
-}
-.header-image{
-	margin: 0 auto;
-	width: fit-content;
-	display: block;
-	cursor: pointer;
-}
-.header-image img{
-	width: 175px; 
-	border-radius: 100%; 
-	display:block; 
-	margin-left: auto; 
-	margin-right: auto; 
-	margin-bottom: 25px;
-	margin-top: 75px;
+    }
 }
 
-/***** Home navigation ***********************************************************/
-.home-mid-nav{
+.header-image {
+    margin: 0 auto;
+    width: fit-content;
     display: block;
-	text-align: center;
-	margin-top: 30px;
+    cursor: pointer;
 }
-.home-mid-nav a{
+
+.header-image img {
+    width: 175px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 75px;
+}
+
+
+/***** Home navigation ***********************************************************/
+
+.home-mid-nav {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-mid-nav a {
     text-decoration: none;
     font-size: 20px;
     margin: 0 20px;
 }
-.home-mid-nav li{
-	display: inline-block;
+
+.home-mid-nav li {
+    display: inline-block;
 }
 
+
 /***** projects page ***********************************************************/
-.projects-hero-container{
+
+.projects-hero-container {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto auto;
-	grid-template-areas: 
-	"logo logo"
-	"img descr";
+    grid-template-areas: "logo logo" "img descr";
 }
-.projects-hero-logo{
-	grid-area: logo;
-	margin: 0 auto;
-	padding-top: 20px;
-	width: 50%;
-}
-.projects-hero-img{
-	width: 100%;
-	grid-area: img
-}
-.project-hero-descr{
-	grid-area: descr;
-    margin: auto 30px auto 0;
 
-	img{
-		margin: 0 auto 5% -10px;
-		left: 0px;
-		width: 35vw;
-	}
-	li{
-		font-size: 1rem;
-		line-height: 1.2em;
-		list-style: none;
-		margin: 15px 5px;
-		text-align: justify;
-	}
-	a{
-		font-size: 1.2rem;
-		text-align: center;
-	}
+.projects-hero-logo {
+    grid-area: logo;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 50%;
 }
-@media screen and (max-width: $on-laptop) {
-	.projects-hero-container{
-        height: 100%;
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-areas: 
-		"logo"
-		"img"
-		"descr";
+
+.projects-hero-img {
+    width: 100%;
+    grid-area: img
+}
+
+.project-hero-descr {
+    grid-area: descr;
+    margin: auto 30px auto 0;
+    img {
+        margin: 0 auto 5% -10px;
+        left: 0px;
+        width: 35vw;
     }
-    .projects-hero-img{
+    li {
+        font-size: 1rem;
+        line-height: 1.2em;
+        list-style: none;
+        margin: 15px 5px;
+        text-align: justify;
+    }
+    a {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $on-laptop) {
+    .projects-hero-container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "logo" "img" "descr";
+    }
+    .projects-hero-img {
         width: 100%;
     }
-    .project-hero-descr{
+    .project-hero-descr {
         margin: 0 5% 20px;
-	}
-	.projects-hero-logo{
-		width: 80%;
-	}
+    }
+    .projects-hero-logo {
+        width: 80%;
+    }
 }
 
+
 /***** Site footer ***********************************************************/
+
 .site-footer {
-	padding: 2px;
-	width:100%;
-	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 20px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .site-footer p {
     margin-bottom: 0; // Remove margin set in _sass/_base.scss for vertical rythm
 }
 
+
 /***** Social links (Twitter, Github...) *******************************************/
-.social-links{
-	margin: 30px 0;
-	a{
-		font-size: 20px;
-		text-decoration: none;
-		margin: 20px 10px;
-	}
+
+.social-links {
+    margin: 30px 0;
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        margin: 20px 10px;
+    }
 }
+
 
 /***** Pagination ***********************************************************/
-.pagination{
-	max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	bottom: 50px;
+
+.pagination {
+    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 50px;
 }
+
 .paginationicon {
-	font-size: 50px;
+    font-size: 50px;
 }
+
 
 /***** Page content ***********************************************************/
+
 .page-content {
-	padding: 10px 0; 
+    padding: 10px 0;
 }
+
 .page-heading {
-	font-size: 20px;
+    font-size: 20px;
 }
+
 .post-list {
-	margin: 0px 0;
-	list-style: none;
-    > li {
-		margin-bottom: $vertical-spacing-unit;
+    margin: 0px 0;
+    list-style: none;
+    >li {
+        margin-bottom: $vertical-spacing-unit;
     }
 }
+
 .contacticon {
-	font-size: 60px;
-	display:block;
-	margin: 10px;
+    font-size: 60px;
+    display: block;
+    margin: 10px;
 }
-.center{
-	text-align: center;
+
+.center {
+    text-align: center;
 }
+
+.maxwidth {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /***** Posts ***********************************************************/
+
 .post-header {
-	margin-bottom: $vertical-spacing-unit;
-	}
-.post-title {
-	font-size: 50px;
-	font-weight: 600;
-	letter-spacing: -1px;
-	line-height: 1;
-	margin-top: 20px;
-	@include media-query($on-laptop) {
-		font-size: 42px;
-    }
-}
-.post-content {
-	h2 {
-		font-size: 42px;
-		@include media-query($on-laptop) {
-			font-size: 28px;
-		}
-	}
-	h3 {
-		font-size: 30px;
-		@include media-query($on-laptop) {
-			font-size: 22px;
-        }
-    }
-	h4 {
-		font-size: 20px;
-		@include media-query($on-laptop) {
-			font-size: 18px;
-        }
-    }
-}
-.post-meta {
-	font-size: $small-font-size;
-	color: #828282;
-	margin-bottom: 0px; 
-}
-.post-link {
-	display: block;
-	font-size: 42px;
+    margin-bottom: $vertical-spacing-unit;
 }
 
+.post-title {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-top: 20px;
+    @include media-query($on-laptop) {
+        font-size: 42px;
+    }
+}
+
+.post-content {
+    h2 {
+        font-size: 42px;
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+    h3 {
+        font-size: 30px;
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: #828282;
+    margin-bottom: 0px;
+}
+
+.post-link {
+    display: block;
+    font-size: 42px;
+}
+
+
 /***** Poem formatting ***********************************************************/
+
 .poem-title {
-	font-size: 24px;
-	letter-spacing: -1px;
-	line-height: 1;
-	text-decoration: none;
-	@include media-query($on-laptop) {
-		font-size: 16px;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-decoration: none;
+    @include media-query($on-laptop) {
+        font-size: 16px;
     }
 }
 
 
 /***** Portfolio grid ***********************************************************/
+
 .clearfix:before,
 .clearfix:after {
-	content: " ";
-	display: table;
+    content: " ";
+    display: table;
 }
+
 .clearfix:after {
-	clear: both;
+    clear: both;
 }
+
 .project {
-	width: 33.33%;
-	height: 250px;
-	float: left;
-	vertical-align: middle;
-	box-sizing: border-box;
-	padding: 10px;
+    width: 33.33%;
+    height: 250px;
+    float: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px;
 }
-.thumbnail{
-	width: 100%;
-	height: 230px;
-	overflow: hidden;
+
+.thumbnail {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
 }
-.thumbnail img{
-	width: 500px;
-	height: auto;
-	position: relative;
-	left: -25%;
-	top: -5%;
+
+.thumbnail img {
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: -25%;
+    top: -5%;
 }
-.thumbnail a{
-	float: left;
-	position: relative;
-	width: 100%;
-	height: 230px;
+
+.thumbnail a {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 230px;
 }
+
 .thumbnail a span {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background: rgba(0,0,0,0.4);
-	color: $grey-color-light;
-	padding: 40px;
-	text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: $grey-color-light;
+    padding: 40px;
+    text-align: center;
 }
+
 .thumbnail a:hover span {
-	display: block;
+    display: block;
 }
+
 
 /***** Portfolio pages ***********************************************************/
-.img_row{
-	width: 100%;
-	overflow: hidden;
-	box-sizing:border-box;
-	padding: $img_spacing;
-}
-.img_row_constrained{
-	height: $img_height;
-	width: 100%;
-	overflow: hidden;
-	box-sizing:border-box;
-	padding: $img_spacing;
-}
-.project_img{ 
-	width: 100%;
-	grid-area: img;
-	margin: auto;	
-}
-.right{
-	float: right;
-}
-.caption{
-	height: 100%;
-	color: $caption_color;
-	text-align: center;
-	vertical-align: middle;
-	font-size: $caption_font_size;
+
+.img_row {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: $img_spacing;
 }
 
-.hero-img{
-	background: url('/assets/cryptotracker/hero-img.png') no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	overflow: hidden;
-	z-index: -1;
-	position: relative;
-	height: 45vh;
-	margin-right: -8%;
-	margin-left: -8%;
-	@include media-query($on-laptop) {
-		margin-right: -8%;
-		margin-left: -8%;
-		height: 60vh;		
+.img_row_constrained {
+    height: $img_height;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: $img_spacing;
+}
+
+.project_img {
+    width: 100%;
+    grid-area: img;
+    margin: auto;
+}
+
+.right {
+    float: right;
+}
+
+.caption {
+    height: 100%;
+    color: $caption_color;
+    text-align: center;
+    vertical-align: middle;
+    font-size: $caption_font_size;
+}
+
+.hero-img {
+    background: url('/assets/cryptotracker/hero-img.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    height: 45vh;
+    margin-right: -8%;
+    margin-left: -8%;
+    @include media-query($on-laptop) {
+        margin-right: -8%;
+        margin-left: -8%;
+        height: 60vh;
     }
 }
 
-.project_descr{
-	display: grid;
-	grid-template-columns: 1fr 1fr;	
-	grid-template-rows: 1fr;
-	padding: 2% 0px;	
-	@media screen and (max-width: $on-laptop) {
-		grid-template-columns: 1fr !important; 
-		grid-template-rows: auto auto !important;
-		grid-template-areas: "descr" "img" !important;
-		div{ margin: auto !important; }
-		h5{ padding-right: 0% !important; }
-		h1{ text-align: center; }
-		img{
-			margin: 0 auto;
-			// width: 100%;
-			width: 120%;
-			margin-left: 50%;
-    		transform: translateX(-50%);
-		}
-	}
-}
-.project_descr:nth-child(odd){
-	grid-template-areas: "img descr";
-	div{ margin-left: 50px; }
-}
-.project_descr:nth-child(even){
-	grid-template-areas: "descr img";
-	div{ margin-left: 50px; }
+.project_descr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2% 0px;
+    @media screen and (max-width: $on-laptop) {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto !important;
+        grid-template-areas: "descr" "img" !important;
+        div {
+            margin: auto !important;
+        }
+        h5 {
+            padding-right: 0% !important;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            margin: 0 auto;
+            // width: 100%;
+            width: 120%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
-
-.project_explanation{
-	margin: auto 0;
-	h1{
-		font-size: 2.3em;
-		font-weight: 600;
-		line-height: 1em;
-		margin-block-start: 0.67em;
-		margin-block-end: 0.67em;
-	}
-	h5{
-		font-size: 1.2em;
-		font-weight: lighter;
-		text-align: justify;
-		padding-right: 12%;
-		@media screen and (max-width: $on-laptop) {
-			margin: 0 2%;
-		}
-	}
+.project_descr:nth-child(odd) {
+    grid-template-areas: "img descr";
+    div {
+        margin-left: 50px;
+    }
 }
 
-.img-center{
-	clear: both;
+.project_descr:nth-child(even) {
+    grid-template-areas: "descr img";
+    div {
+        margin-left: 50px;
+    }
+}
+
+.project_explanation {
+    margin: auto 0;
+    h1 {
+        font-size: 2.3em;
+        font-weight: 600;
+        line-height: 1em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+    }
+    h5 {
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-align: justify;
+        padding-right: 12%;
+        @media screen and (max-width: $on-laptop) {
+            margin: 0 2%;
+        }
+    }
+}
+
+.img-center {
+    clear: both;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
+    text-align: center;
 }
+
 
 /* ####################################
 			About page 
 #################################### */
-.about-container{
-	img{
-		border-radius: 50%; 
-		width: 200px; 
-		margin-bottom: 30px;
-	}
-	h1{
-		font-weight: 800; 
-		font-size: 32px
-	}
-	h1, h2, h3, h4, h5{
-		margin: 3% 0;
-		line-height: 1.4em;
-	}
+
+.about-container {
+    img {
+        border-radius: 50%;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 32px
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 3% 0;
+        line-height: 1.4em;
+    }
 }

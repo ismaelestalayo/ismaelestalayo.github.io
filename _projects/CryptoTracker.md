@@ -29,8 +29,6 @@ img: /assets/1.jpg
 	font-size: 32px;
 	font-weight: 500;
 	text-align: center;
-	max-width: 1440px;
-	margin: auto;
 }
 .hero-blur-descr h1{
 	font-size: 1em;
@@ -64,7 +62,7 @@ img: /assets/1.jpg
 <div class="page-content" style="position: relative; height: 90vh; width: 100vw;">
 	<div class="hero-blur-background">
 	</div>
-	<div class="hero-blur-descr">
+	<div class="hero-blur-descr maxwidth">
 		<img id="hero-img" src="/assets/cryptotracker/logo-wide-light.png">
 		<h1>Simple yet powerful cryptocurrency tracker for Windows 10</h1>
 		<a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge?cid=personal">
@@ -73,7 +71,7 @@ img: /assets/1.jpg
 	</div>
 </div>
 
-<div class="page-content" style="margin: 0 5%;">
+<div class="page-content maxwidth">
 	<div class="project_descr">
 		<img class="project_img" id="gridRow1" src="/assets/cryptotracker/top100_light.png"/>
 		<div class="project_explanation">
