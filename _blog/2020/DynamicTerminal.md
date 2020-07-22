@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic Windows Terminal theme
-date: 2020-07-21 17:00:00
+date: 2020-07-22 13:00
 author: Ismael Estalayo
 visible: true
 ---
