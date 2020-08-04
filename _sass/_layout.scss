@@ -1,3 +1,36 @@
+/* ####################################
+			Shared
+#################################### */
+
+.drop-shadow {
+    filter: drop-shadow(0px 0px 20px #f0f0f020);
+    &:hover {
+        filter: drop-shadow(0px 0px 20px #f0f0f040);
+    }
+    @media screen and (max-width: $on-laptop) {
+        filter: drop-shadow(0px 0px 20px #f0f0f040);
+    }
+    @media (prefers-color-scheme: dark) {
+        filter: drop-shadow(0px 0px 20px #20202020);
+        &:hover {
+            filter: drop-shadow(0px 0px 25px #20202040);
+        }
+        @media screen and (max-width: $on-laptop) {
+            filter: drop-shadow(0px 0px 25px #20202040);
+        }
+    }
+}
+
+.colored-link {
+    color: $accent-color !important;
+    text-decoration: $accent-color;
+    text-shadow: 0px 0px 20px $accent-color;
+    &:hover {
+        text-shadow: 0px 0px 25px lighten($accent-color, 20%);
+    }
+}
+
+
 /***** Site header ***********************************************************/
 
 .site-header {
@@ -120,6 +153,9 @@
     grid-template-rows: auto auto;
     grid-template-areas: "logo logo" "img descr";
     background: #f8f8f8;
+    @media (prefers-color-scheme: dark) {
+        background: #232323;
+    }
 }
 
 .projects-hero-logo {

@@ -18,8 +18,8 @@ permalink: /projects/
 			<hr>			
 			<li>And keep up to date with the lates News.</li>
 		</span>
-		<div class="colored-link" style="text-align: center; padding: 15px 0">
-			<a href="CryptoTracker">Read more...</a>		
+		<div style="text-align: center; padding: 15px 0">
+			<a class="colored-link" href="CryptoTracker">Read more...</a>		
 		</div>
 	</div>
 </div>
