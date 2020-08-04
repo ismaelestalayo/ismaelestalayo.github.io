@@ -33,6 +33,7 @@
     display: inline-flex;
     h3 {
         font-weight: 600;
+        margin: auto 0;
         @include media-query(450px) {
             display: none
         }
@@ -118,11 +119,12 @@
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto auto;
     grid-template-areas: "logo logo" "img descr";
+    background: #f8f8f8;
 }
 
 .projects-hero-logo {
     grid-area: logo;
-    margin: 0 auto;
+    margin: -6% auto;
     padding-top: 20px;
     width: 50%;
 }
@@ -145,7 +147,7 @@
         line-height: 1.2em;
         list-style: none;
         margin: 15px 5px;
-        text-align: justify;
+        text-align: center;
     }
     a {
         font-size: 1.2rem;
@@ -261,6 +263,7 @@
     letter-spacing: -1px;
     line-height: 1;
     margin-top: 20px;
+    text-align: center;
     @include media-query($on-laptop) {
         font-size: 42px;
     }
@@ -331,44 +334,6 @@
     vertical-align: middle;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.thumbnail {
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
-}
-
-.thumbnail img {
-    width: 500px;
-    height: auto;
-    position: relative;
-    left: -25%;
-    top: -5%;
-}
-
-.thumbnail a {
-    float: left;
-    position: relative;
-    width: 100%;
-    height: 230px;
-}
-
-.thumbnail a span {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.4);
-    color: $grey-color-light;
-    padding: 40px;
-    text-align: center;
-}
-
-.thumbnail a:hover span {
-    display: block;
 }
 
 

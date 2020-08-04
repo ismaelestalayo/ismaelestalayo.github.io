@@ -40,8 +40,7 @@ img: /assets/1.jpg
 .hero-blur-descr img{
 	margin-left: auto;
 	display: block;
-	margin: auto;
-	margin-top: 25vh;
+	margin: 10vh auto 0;
 	width: 75%;
 }
 @media (max-width: 700px) {
@@ -63,7 +62,7 @@ img: /assets/1.jpg
 	<div class="hero-blur-background">
 	</div>
 	<div class="hero-blur-descr maxwidth">
-		<img id="hero-img" src="/assets/cryptotracker/logo-wide-light.png">
+		<img id="hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png">
 		<h1>Simple yet powerful cryptocurrency tracker for Windows 10</h1>
 		<a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge?cid=personal">
 		<img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" class="img-center" style="max-width: 250px; margin-top: 10vw; width: 50vw;">
@@ -100,12 +99,12 @@ img: /assets/1.jpg
 		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_light.png";
 		document.getElementById("gridRow2").src = "/assets/cryptotracker/details_light.png";
 		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_light.png";
-		document.getElementById("hero-img").src = "/assets/cryptotracker/logo-wide-dark.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png";
 	}
 	function darkTheme(){
 		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
 		document.getElementById("gridRow2").src = "/assets/cryptotracker/details_dark.png";
 		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
-		document.getElementById("hero-img").src = "/assets/cryptotracker/logo-wide-light.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-L.png";
 	}
 </script>

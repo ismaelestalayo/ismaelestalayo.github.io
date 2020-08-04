@@ -137,13 +137,25 @@ body ::-webkit-scrollbar {
     p,
     code,
     ul {
-        color: $dark-theme-fg;
+        color: #f0f0f0;
     }
     body {
-        background-color: $dark-theme-bg;
+        background-color: #202020;
         pre,
         code {
             background-color: $dark-theme-bg-semi;
+        }
+    }
+    .drop-shadow {
+        filter: drop-shadow(0px 0px 20px #f0f0f020);
+        &:hover {
+            filter: drop-shadow(0px 0px 20px #f0f0f040);
+        }
+        @media screen and (max-width: $on-laptop) {
+            filter: drop-shadow(0px 0px 20px #f0f0f040);
+        }
+        a {
+            color: #f0f0f0;
         }
     }
 }
@@ -160,13 +172,25 @@ body ::-webkit-scrollbar {
     p,
     code,
     ul {
-        color: $light-theme-fg;
+        color: #202020;
     }
     body {
-        background-color: $light-theme-bg;
+        background-color: #f0f0f0;
         pre,
         code {
             background-color: $light-theme-bg-semi;
+        }
+    }
+    .drop-shadow {
+        filter: drop-shadow(0px 0px 20px #20202020);
+        &:hover {
+            filter: drop-shadow(0px 0px 25px #20202040);
+        }
+        @media screen and (max-width: $on-laptop) {
+            filter: drop-shadow(0px 0px 25px #20202040);
+        }
+        a {
+            color: #202020;
         }
     }
 }
@@ -205,6 +229,7 @@ h4,
 h5,
 h6 {
     font-weight: 100;
+    line-height: normal;
 }
 
 
@@ -219,8 +244,11 @@ a {
 }
 
 article a {
-    color: $accent-color !important;
     font-weight: 400;
+}
+
+.colored-link {
+    color: $accent-color !important;
     text-decoration: $accent-color;
     text-shadow: 0px 0px 20px $accent-color;
     &:hover {
