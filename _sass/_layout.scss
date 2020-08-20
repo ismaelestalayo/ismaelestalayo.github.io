@@ -42,7 +42,7 @@
 .site-title {
     font-size: 20px;
     line-height: $nav-height;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     margin-bottom: 0;
     &:hover {
         text-decoration: none;
@@ -270,6 +270,12 @@
     }
 }
 
+.post-list-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
 .contacticon {
     font-size: 60px;
     display: block;
@@ -290,14 +296,14 @@
 /***** Posts ***********************************************************/
 
 .post-header {
-    margin-bottom: $vertical-spacing-unit;
+    margin-bottom: 1rem;
 }
 
 .post-title {
     font-size: 50px;
     font-weight: 600;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 100%;
     margin-top: 20px;
     text-align: center;
     @include media-query($on-laptop) {
@@ -306,30 +312,44 @@
 }
 
 .post-content {
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 900;
+        letter-spacing: -1px;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+    }
     h2 {
-        font-size: 42px;
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin-block-start: 1rem;
+        margin-block-end: 0.5rem;
+        font-weight: 600;
     }
     h3 {
-        font-size: 30px;
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-block-start: 1rem;
+        margin-block-end: 0.5rem;
+        font-weight: 600;
     }
-    h4 {
-        font-size: 20px;
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    p,
+    ul {
+        font-size: clamp(1rem, 1.25vw, 1.25rem);
+        font-stretch: condensed;
+        font-weight: 100;
+        line-height: normal;
+        margin-block-end: 0.5em;
+        margin-inline-end: 0px;
+        text-align: justify;
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: #828282;
-    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .post-link {
@@ -337,17 +357,11 @@
     font-size: 42px;
 }
 
-
-/***** Poem formatting ***********************************************************/
-
-.poem-title {
-    font-size: 24px;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-decoration: none;
-    @include media-query($on-laptop) {
-        font-size: 16px;
-    }
+.post-center-img {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 75vw;
 }
 
 

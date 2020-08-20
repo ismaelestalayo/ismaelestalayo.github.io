@@ -44,7 +44,7 @@ p {
     font-size: 1.2em;
     font-stretch: condensed;
     line-height: 1.5em;
-    margin-block-start: 1em;
+    margin-block-start: 0em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -204,7 +204,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 100;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -278,11 +278,10 @@ pre {
 ***********************************************************/
 
 .wrapper {
-    max-width: -webkit-calc(1200px - (#{$horizontal-spacing-unit} * 2));
-    max-width: calc(1200px - (#{$horizontal-spacing-unit} * 2));
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 7%; // small padding on the sides
+    padding: 0 5%; // small padding on the sides
     @extend %clearfix;
 }
 

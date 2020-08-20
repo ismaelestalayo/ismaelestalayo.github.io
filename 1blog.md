@@ -10,7 +10,7 @@ description:
 {% for post in site.blog reversed %}
 {% if post.visible == true  %}
     <li>
-        <h2><a class="poem-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <h2><a class="post-list-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
       </li>
 {% endif  %}
