@@ -255,7 +255,7 @@
 /***** Page content ***********************************************************/
 
 .page-content {
-    padding: 10px 0;
+    padding: 1%;
 }
 
 .page-heading {
@@ -296,7 +296,7 @@
 /***** Posts ***********************************************************/
 
 .post-header {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .post-title {
@@ -404,8 +404,9 @@
     padding: $img_spacing;
 }
 
-.project_img {
-    width: 100%;
+.project_img,
+.project_img img {
+    width: 95%;
     grid-area: img;
     margin: auto;
 }
@@ -458,10 +459,11 @@
         h1 {
             text-align: center;
         }
-        img {
+        img,
+        picture {
             margin: 0 auto;
             // width: 100%;
-            width: 120%;
+            width: 100%;
             margin-left: 50%;
             transform: translateX(-50%);
         }
@@ -492,7 +494,7 @@
         margin-block-end: 0.67em;
     }
     h5 {
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: lighter;
         text-align: justify;
         padding-right: 12%;

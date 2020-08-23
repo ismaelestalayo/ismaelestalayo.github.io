@@ -12,11 +12,11 @@ permalink: /projects/
 		src="/assets/cryptotracker/Laptop_front_home_light.png"/>
 	<div class="project-hero-descr">
 		<span>
-			<li>Supports over 100 coins.</li>
+			<li>Supports over 300 coins.</li>
 			<hr>
-			<li>Keep track of the ups and downs of your purchases with the Portfolio section.</li>
+			<li>Keep track of the performance of your purchases.</li>
 			<hr>			
-			<li>And keep up to date with the lates News.</li>
+			<li>And stay up to date with the lates news.</li>
 		</span>
 		<div style="text-align: center; padding: 15px 0">
 			<a class="colored-link" href="CryptoTracker">Read more...</a>		

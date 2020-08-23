@@ -32,6 +32,7 @@ img: /assets/1.jpg
 }
 .hero-blur-descr h1{
 	font-size: 1em;
+	font-weight: 400;
 	line-height: 1.3em;
 	margin: 5vw auto;
 	text-align: center;
@@ -49,12 +50,12 @@ img: /assets/1.jpg
 }
 
 @media (prefers-color-scheme: light){
-	.hero-blur-descr h1{ filter: drop-shadow(1px 1px 4px white) }
-	.hero-blur-descr img{ filter: drop-shadow(1px 1px 4px white) }
+	.hero-blur-descr h1{ filter: drop-shadow(1px 1px 4px #00000088) }
+	.hero-blur-descr img{ filter: drop-shadow(1px 1px 4px #00000088) }
 }
 @media (prefers-color-scheme: dark){
-	.hero-blur-descr h1{ filter: drop-shadow(1px 1px 4px black) }
-	.hero-blur-descr img{ filter: drop-shadow(1px 1px 4px black) }
+	.hero-blur-descr h1{ filter: drop-shadow(1px 1px 4px #ffffff88) }
+	.hero-blur-descr img{ filter: drop-shadow(1px 1px 4px #ffffff88) }
 }
 </style>
 
@@ -63,7 +64,7 @@ img: /assets/1.jpg
 	</div>
 	<div class="hero-blur-descr maxwidth">
 		<img id="hero-img" src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png">
-		<h1>Simple yet powerful cryptocurrency tracker for Windows 10</h1>
+		<h1>Minimal yet powerful cryptocurrency tracker.</h1>
 		<a href="https://www.microsoft.com/store/apps/9n3b47hbvblc?ocid=badge?cid=personal">
 		<img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" class="img-center" style="max-width: 250px; margin-top: 10vw; width: 50vw;">
 	</a>
@@ -72,24 +73,53 @@ img: /assets/1.jpg
 
 <div class="page-content maxwidth">
 	<div class="project_descr">
-		<img class="project_img" id="gridRow1" src="/assets/cryptotracker/top100_light.png"/>
+		<picture class="project_img">
+			<source srcset="/assets/cryptotracker/top100D.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/top100L.png" loading="lazy">
+		</picture>
 		<div class="project_explanation">
-			<h1>Supports over 100 cryptocurrencies</h1>
-			<h5>Keep up to date with Bitcoin, Ethereum, Litecoin... and over a hundred alt-coins, all supporting the main exchanges and currencies all over the world.</h5>
+			<h1>Supports over 300 cryptocurrencies</h1>
+			<h5>Keep up to date with over three hundred alt-coins, all of them supporting the main exchanges and currencies from all over the world.</h5>
 		</div>
 	</div>
 	<div class="project_descr">
-		<img class="project_img" id="gridRow2" src="/assets/cryptotracker/details_light.png"/>
+		<picture class="project_img">
+			<source srcset="/assets/cryptotracker/detailsD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/detailsL.png" loading="lazy">
+		</picture>
 		<div class="project_explanation">
 			<h1>Detailed overview</h1>
-			<h5>Compare the prices of the main exchanges, watch the traded volume of the last 24h, read information about the coin...</h5>
+			<h5>Historic prices, insightful information, global and coin stats, volume... and all from a single page.</h5>
 		</div>
 	</div>
 	<div class="project_descr">
-		<img class="project_img" id="gridRow3" src="/assets/cryptotracker/portfolio_light.png"/>
+		<picture class="project_img">
+			<source srcset="/assets/cryptotracker/portfolioChartD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/portfolioChartL.png" loading="lazy">
+		</picture>
 		<div class="project_explanation">
 			<h1>Your portfolio at a glance</h1>
-			<h5>Keep track of your purchases with the Portfolio section, and stay up to date with the News section.</h5>
+			<h5>Keep track of all your purchases with a clear overview of your portfolio, analyze its trend with the historic graph and see the total profits/losses of each purchase.</h5>
+		</div>
+	</div>
+	<div class="project_descr">
+		<picture class="project_img">
+			<source srcset="/assets/cryptotracker/portfolioDetailsD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/portfolioDetailsL.png" loading="lazy">
+		</picture>
+		<div class="project_explanation">
+			<h1>Detailed portfolio manager</h1>
+			<h5>Examine the performance of your investments one by one with a detailed view, and save a backup to the cloud to have all your devices synced.</h5>
+		</div>
+	</div>
+	<div class="project_descr">
+		<picture class="project_img">
+			<source srcset="/assets/cryptotracker/newsD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/newsL.png" loading="lazy">
+		</picture>
+		<div class="project_explanation">
+			<h1>The latest news</h1>
+			<h5>Stay up to date with the latest news of the crypto world, and filter them to the tags that matter to you the most.</h5>
 		</div>
 	</div>
 </div>
@@ -97,13 +127,11 @@ img: /assets/1.jpg
 <script>
 	function lightTheme(){
 		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_light.png";
-		document.getElementById("gridRow2").src = "/assets/cryptotracker/details_light.png";
 		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_light.png";
 		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png";
 	}
 	function darkTheme(){
 		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
-		document.getElementById("gridRow2").src = "/assets/cryptotracker/details_dark.png";
 		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
 		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-L.png";
 	}
