@@ -1,21 +1,20 @@
 <header class="site-header">
 	<div>
-		
-		<nav class="site-nav">
-			<div class="trigger">
-				<a href="{{ site.baseurl }}/">Home</a>
 
-				{% for page in site.pages %}
-					{% if page.title and page.visible %} 
-						<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-					{% endif %}
-				{% endfor %}
+		<nav class="nav-container">
+			<a class="site-logo" href="/">
+				<span class="site-logo-text">IE</span>
+			</a>
 
-				<div class="site-nav-right">
-					<h3>Ismael Estalayo</h3>
-					<a href="/about"><img src="/assets/profile1.jpg"/></a>
-				</div>
-			</div>
+			{% assign current = page.url | downcase | split: '/' %}
+
+			<ul class="nav-right">
+				<li><a href="/blog/" {% if current[1] == 'blog' %}style='font-weight: 600' {% endif %}>Blog</a></li>
+				<li><a href="/projects/" {% if current[1] == 'projects' %}style='font-weight: 600'
+						{% endif %}>Projects</a></li>
+				<li><a href="/about" {% if current[1] == 'about' %}style='font-weight: 600' {% endif %}>About</a></li>
+			</ul>
+
 		</nav>
 
 	</div>
