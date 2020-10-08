@@ -1,5 +1,6 @@
 ---
 layout: noHeader
+permalink: /
 ---
 
 <head>
@@ -9,8 +10,8 @@ layout: noHeader
 
 <script>
 	function themeChanged() {
-		localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); 
-		localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark'); 
+		localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark');
+		localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
 	}
 </script>
 
@@ -20,7 +21,7 @@ layout: noHeader
 		<img src="assets/profile1.jpg">
 	</a>
 	<h1>Ismael Estalayo</h1>
-	<h2>engineer - photographer - maker</h2>
+	<h5>engineer - photographer - maker</h5>
 
 	<nav class="home-mid-nav">
 		<ul>
