@@ -6,7 +6,7 @@ permalink: /about
 ---
 
 <div class="about-container">
-	<img class="img-center" src="/assets/profile1.jpg" />
+	<img class="img-center" src="{{ site.avatar }}" />
 </div>
 
 ## Hi, I'm Ismael!
