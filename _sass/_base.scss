@@ -240,14 +240,14 @@ article a {
 
 .page p > a,
 .blog-post p > a {
-    background-color: $accent-light-semi;
+    background: linear-gradient(to top, $accent-light-semi 10%, transparent 35%);
     font-weight: 600;
     text-decoration: none;
     padding: 0.5px 3px;
     border-radius: 3px;
     -moz-border-radius: 2px 2px 2px 2px;
     &:hover {
-        background-color: $accent-light;
+        background: linear-gradient(to top, $accent-light 15%, transparent 35%);
     }
 }
 
@@ -322,7 +322,7 @@ pre {
 ***********************************************************/
 
 .wrapper {
-    max-width: 65rem;
+    max-width: 60rem;
     margin-right: auto;
     margin-left: auto;
     padding: 0 5%; // small padding on the sides
