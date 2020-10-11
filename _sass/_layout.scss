@@ -321,7 +321,7 @@
     h1,
     h2,
     h3 {
-        padding: 2rem 0 0.3rem;
+        padding: 2rem 0 0;
     }
     h1 {
         font-size: 2rem;
@@ -342,13 +342,12 @@
     p {
         margin: 0;
     }
-    p,
-    ul {
+    p {
         font-size: 1.1rem;
         font-stretch: expanded;
         font-weight: 100;
-        line-height: 1.3rem;
-        padding-bottom: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem 0;
         text-align: justify;
     }
     li p {
