@@ -3,6 +3,7 @@ layout: post-minimal
 
 description: Simple yet powerful crypto-currency tracker for Windows 10.
 img: /assets/1.jpg
+redirect_from: /CryptoTracker
 ---
 
 <style>
