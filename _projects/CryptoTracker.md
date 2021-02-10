@@ -148,10 +148,10 @@ redirect_from: /CryptoTracker
 		</div>
 	</div>
 </div>
-
-<a href='//www.microsoft.com/store/apps/9n3b47hbvblc?cid=storebadge&ocid=badge'><img
-		src='images/English_get-it-from-MS.png' alt='English badge' class="img-center"
-		style='width: 284px; height: 104px; margin-top: 3vw;' /></a>
+<a href='//www.microsoft.com/store/apps/9n3b47hbvblc?cid=storebadge&ocid=badge'>
+	<img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png'
+		 alt='English badge' class="img-center" style='width: 284px; height: 104px;'/>
+</a>
 
 
 <script>
