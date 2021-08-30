@@ -8,7 +8,7 @@ redirect_from: /CryptoTracker
 
 <style>
 	.hero-blur-background {
-		background: url('/assets/cryptotracker/hero-img.png') repeat;
+		background: url("https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/develop/Screenshots/promo/Hero-art.png") repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
@@ -92,8 +92,8 @@ redirect_from: /CryptoTracker
 <div class="site-content maxwidth">
 	<div class="project-descr">
 		<picture class="project_img">
-			<source srcset="/assets/cryptotracker/top100D.png" media="(prefers-color-scheme: dark)">
-			<img src="/assets/cryptotracker/top100L.png" loading="lazy">
+			<source srcset="/assets/cryptotracker/coinsD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/coinsL.png" loading="lazy">
 		</picture>
 		<div class="project_explanation">
 			<h1>Supports over 300 cryptocurrencies</h1>
@@ -114,8 +114,8 @@ redirect_from: /CryptoTracker
 	</div>
 	<div class="project-descr">
 		<picture class="project_img">
-			<source srcset="/assets/cryptotracker/portfolioChartD.png" media="(prefers-color-scheme: dark)">
-			<img src="/assets/cryptotracker/portfolioChartL.png" loading="lazy">
+			<source srcset="/assets/cryptotracker/portfolioD.png" media="(prefers-color-scheme: dark)">
+			<img src="/assets/cryptotracker/portfolioL.png" loading="lazy">
 		</picture>
 		<div class="project_explanation">
 			<h1>Your portfolio at a glance</h1>
@@ -156,13 +156,9 @@ redirect_from: /CryptoTracker
 
 <script>
 	function lightTheme() {
-		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_light.png";
-		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_light.png";
 		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png";
 	}
 	function darkTheme() {
-		document.getElementById("gridRow1").src = "/assets/cryptotracker/top100_dark.png";
-		document.getElementById("gridRow3").src = "/assets/cryptotracker/portfolio_dark.png";
 		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-L.png";
 	}
 </script>

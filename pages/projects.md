@@ -26,10 +26,10 @@ permalink: /projects/
 <script>
 	function lightTheme() {
 		document.getElementById("hero-logo").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png";
-		document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_light.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/develop/Screenshots/promo/Laptop-light.png";
 	}
 	function darkTheme() {
 		document.getElementById("hero-logo").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-L.png";
-		document.getElementById("hero-img").src = "/assets/cryptotracker/Laptop_front_home_dark.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/develop/Screenshots/promo/Laptop-dark.png";
 	}
 </script>
