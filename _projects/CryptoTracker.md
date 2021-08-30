@@ -27,6 +27,7 @@ redirect_from: /CryptoTracker
 
 	.hero-blur-descr {
 		color: white;
+		filter: drop-shadow(0px 0px 6px #000000ee);
 		font-size: 32px;
 		font-weight: 500;
 		text-align: center;
@@ -36,7 +37,7 @@ redirect_from: /CryptoTracker
 		font-size: 1em;
 		font-weight: 400;
 		line-height: 1.3em;
-		margin: 5vw auto;
+		margin: 0 auto 25vh;
 		text-align: center;
 		width: 80%;
 	}
@@ -57,35 +58,15 @@ redirect_from: /CryptoTracker
 			width: 95%;
 		}
 	}
-
-	@media (prefers-color-scheme: light) {
-		.hero-blur-descr h1 {
-			filter: drop-shadow(1px 1px 4px #00000088)
-		}
-
-		.hero-blur-descr img {
-			filter: drop-shadow(1px 1px 4px #00000088)
-		}
-	}
-
-	@media (prefers-color-scheme: dark) {
-		.hero-blur-descr h1 {
-			filter: drop-shadow(1px 1px 4px #ffffff88)
-		}
-
-		.hero-blur-descr img {
-			filter: drop-shadow(1px 1px 4px #ffffff88)
-		}
-	}
 </style>
 
-<div class="site-content" style="position: relative; height: 90vh; width: 100vw;">
+<div class="site-content" style="position: relative; width: 100vw;">
 	<div class="hero-blur-background">
 	</div>
 	<div class="hero-blur-descr maxwidth">
-		<img id="hero-img"
+		<img id="hero-img" alt="CryptoTracker hero image with screenshots"
 			src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png">
-		<h1>Minimal yet powerful cryptocurrency tracker.</h1>
+		<h1>Simple yet powerful cryptocurrency portfolio tracker.</h1>
 	</div>
 </div>
 
@@ -96,8 +77,8 @@ redirect_from: /CryptoTracker
 			<img src="/assets/cryptotracker/coinsL.png" loading="lazy">
 		</picture>
 		<div class="project_explanation">
-			<h1>Supports over 300 cryptocurrencies</h1>
-			<h5>Keep up to date with over three hundred alt-coins, all of them supporting the main exchanges and
+			<h1>Supports over 800 cryptocurrencies</h1>
+			<h5>Keep up to date with any alt-coins, all of them supporting the main exchanges and
 				currencies from all over the world.</h5>
 		</div>
 	</div>
@@ -108,7 +89,7 @@ redirect_from: /CryptoTracker
 		</picture>
 		<div class="project_explanation">
 			<h1>Detailed overview</h1>
-			<h5>Historic prices, insightful information, global and coin stats, volume... and all from a single page.
+			<h5>Historic prices, insightful information, global stats, volume and candle charts... everything in a single page.
 			</h5>
 		</div>
 	</div>
@@ -132,8 +113,7 @@ redirect_from: /CryptoTracker
 		</picture>
 		<div class="project_explanation">
 			<h1>Detailed portfolio manager</h1>
-			<h5>Examine the performance of your investments one by one with a detailed view, and save a backup to the
-				cloud to have all your devices synced.</h5>
+			<h5>Examine the performance of each of your investments with a detailed view, and keep them safe by creating backups.</h5>
 		</div>
 	</div>
 	<div class="project-descr">
@@ -142,7 +122,7 @@ redirect_from: /CryptoTracker
 			<img src="/assets/cryptotracker/newsL.png" loading="lazy">
 		</picture>
 		<div class="project_explanation">
-			<h1>The latest news</h1>
+			<h1>Get latest news</h1>
 			<h5>Stay up to date with the latest news of the crypto world, and filter them to the tags that matter to you
 				the most.</h5>
 		</div>
@@ -150,7 +130,7 @@ redirect_from: /CryptoTracker
 </div>
 <a href='//www.microsoft.com/store/apps/9n3b47hbvblc?cid=storebadge&ocid=badge'>
 	<img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png'
-		 alt='English badge' class="img-center" style='width: 284px; height: 104px;'/>
+		 alt='English badge' class="img-center" style='width: 50%; max-width: 300px; margin-top: 75px;'/>
 </a>
 
 

@@ -17,6 +17,7 @@ highlighter: rouge
 paginate: 2
 paginate_path: "/blog/page:num/"
 
+host: 0.0.0.0
 
 collections:
   projects:

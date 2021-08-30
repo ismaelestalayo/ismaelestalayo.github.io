@@ -8,14 +8,14 @@ permalink: /projects/
 <div class="projects-hero-container drop-shadow">
 	<img id="hero-logo" class="projects-hero-logo"
 		src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png">
-	<img id="hero-img" class="projects-hero-img" src="/assets/cryptotracker/Laptop_front_home_light.png" />
+	<img id="hero-img" class="projects-hero-img"/>
 	<div class="project-hero-descr">
 		<span>
-			<li>Supports over 300 coins.</li>
+			<li>Supports over 800 coins and 15 currencies.</li>
 			<hr>
-			<li>Keep track of the performance of your purchases.</li>
+			<li>Keep track of the performance of your portfolios.</li>
 			<hr>
-			<li>And stay up to date with the lates news.</li>
+			<li>Live Tiles, price alerts, PiP and much more...</li>
 		</span>
 		<div style="text-align: center; padding: 15px 0">
 			<a class="btn" href="CryptoTracker">Read more...</a>
