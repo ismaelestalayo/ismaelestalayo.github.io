@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3º Crypto Tracker anniversary
+title: 3rd Crypto Tracker anniversary
 date: 2020-08-20 19:00
 image: assets/cryptotracker/hero-art.png
 author: Ismael Estalayo
