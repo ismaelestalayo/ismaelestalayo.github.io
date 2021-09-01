@@ -2,10 +2,16 @@
 layout: post
 title: Crypto Tracker v6
 date: 2021-09-01 15:00
-image: assets/cryptotracker/hero-art.png
+image: ../CryptoTracker6/Home-light.png
 author: Ismael Estalayo
 visible: true
 ---
+
+<head>
+  <meta property="og:title" content="Test title">
+  <meta property="og:description" content="Description">
+  <meta property="og:image" content="../CryptoTracker6/Hero-art.png">
+</head>
 
 <style>
   img {
