@@ -2,8 +2,8 @@
 layout: page
 permalink: /blog/
 title: Blog
+description: Tech related posts.
 visible: true
-description:
 ---
 
 <ul class="post-list">

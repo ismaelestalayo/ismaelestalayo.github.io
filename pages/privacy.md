@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms, Conditions and Privacy
+description: Privacy policy for any of my projects
 permalink: /privacy/
 ---
 

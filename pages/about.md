@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: About my self.
 visible: true
 permalink: /about
 ---
