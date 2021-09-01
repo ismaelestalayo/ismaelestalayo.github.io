@@ -2,16 +2,52 @@
 layout: post
 title: Crypto Tracker v6
 date: 2021-09-01 15:00
+description: Test description
 image: ../CryptoTracker6/Home-light.png
 author: Ismael Estalayo
 visible: true
 ---
 
-<head>
-  <meta property="og:title" content="Test title">
-  <meta property="og:description" content="Description">
-  <meta property="og:image" content="../CryptoTracker6/Hero-art.png">
-</head>
+
+<meta content="{{ site.title }}" property="og:site_name">
+{% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+{% else %}
+  <meta content="{{ site.title }}" property="og:title">
+{% endif %}
+{% if page.title %}
+  <meta content="article" property="og:type">
+{% else %}
+  <meta content="website" property="og:type">
+{% endif %}
+{% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+{% else %}
+  <meta content="{{ site.description }}" property="og:description">
+{% endif %}
+{% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+{% endif %}
+{% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.url }}/about/" property="article:author">
+{% endif %}
+{% if page.image %}
+  <meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image">
+{% else %}
+  <meta content="{{ site.url }}/assets/img/logo-high-resolution.png" property="og:image">
+{% endif %}
+{% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+{% endif %}
+{% if page.tags %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
+{% endif %}
+
 
 <style>
   img {
@@ -63,8 +99,8 @@ Last but not least, this page has a couple of aces up its sleeve. At the top of 
 The portfolio section has been vastly improved as well. At the top of the page your portfolio's **diversification rates** will be shown in a colorful and visual way. There's also a new **backup import/export** feature so you never lose your portfolio (or to have multiple).
 
 <picture>
-  <source srcset="../CryptoTracker6/Portfolio-light.gif" media="(prefers-color-scheme: dark)">
-  <img src="../CryptoTracker6/Portfolio-dark.gif" class="post-center-img"
+  <source srcset="../CryptoTracker6/portfolio-light.gif" media="(prefers-color-scheme: dark)">
+  <img src="../CryptoTracker6/portfolio-dark.gif" class="post-center-img"
      style="width: 85vw; max-width: 900px;">
 </picture>
 
