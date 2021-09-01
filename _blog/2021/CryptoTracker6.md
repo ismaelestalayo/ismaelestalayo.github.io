@@ -3,7 +3,7 @@ layout: post
 title: Crypto Tracker 6.0
 date: 2021-09-01 15:00
 description: New v6 update for Launch 2021 event
-image: https://ismaelestalayo.com/blog/2021/CryptoTracker6/Hero-art.png
+image: https://ismaelestalayo.com/blog/2021/CryptoTracker6.png
 author: Ismael Estalayo
 visible: true
 ---
