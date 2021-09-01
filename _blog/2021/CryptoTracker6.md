@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Crypto Tracker v6 test
+title: Crypto Tracker 6.0
 date: 2021-09-01 15:00
-description: Test description
-image: ../CryptoTracker6/Home-light.png
+description: New v6 update for Launch 2021 event
+image: https://ismaelestalayo.com/blog/2021/CryptoTracker6/Hero-art.png
 author: Ismael Estalayo
 visible: true
 ---
