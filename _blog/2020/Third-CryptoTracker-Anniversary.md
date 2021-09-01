@@ -2,6 +2,7 @@
 layout: post
 title: 3rd Crypto Tracker anniversary
 date: 2020-08-20 19:00
+description: Crypto Tracker v5 update
 image: https://ismaelestalayo.com/blog/2020/Hero-art.png
 author: Ismael Estalayo
 visible: true
