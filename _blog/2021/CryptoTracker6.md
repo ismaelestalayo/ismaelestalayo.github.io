@@ -4,7 +4,7 @@ title: Crypto Tracker v6
 date: 2021-09-01 15:00
 image: assets/cryptotracker/hero-art.png
 author: Ismael Estalayo
-visible: false
+visible: true
 ---
 
 <style>
