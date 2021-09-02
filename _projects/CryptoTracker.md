@@ -65,7 +65,7 @@ redirect_from: /CryptoTracker
 	</div>
 	<div class="hero-blur-descr maxwidth">
 		<img id="hero-img" alt="CryptoTracker hero image with screenshots"
-			src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png">
+			src="https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/UWP/Assets/Wide-D.png">
 		<h1>Simple yet powerful cryptocurrency portfolio tracker.</h1>
 	</div>
 </div>
@@ -136,9 +136,9 @@ redirect_from: /CryptoTracker
 
 <script>
 	function lightTheme() {
-		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-D.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/UWP/Assets/Wide-D.png";
 	}
 	function darkTheme() {
-		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/CryptoTracker/Assets/Wide-L.png";
+		document.getElementById("hero-img").src = "https://raw.githubusercontent.com/ismaelestalayo/CryptoTracker/master/UWP/Assets/Wide-L.png";
 	}
 </script>
