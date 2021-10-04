@@ -128,11 +128,9 @@ redirect_from: /CryptoTracker
 		</div>
 	</div>
 </div>
-<a href='//www.microsoft.com/store/apps/9n3b47hbvblc?cid=storebadge&ocid=badge'>
-	<img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png'
-		 alt='English badge' class="img-center" style='width: 50%; max-width: 300px; margin-top: 75px;'/>
-</a>
 
+<script type="module" src="https://getbadgecdn.azureedge.net/ms-store-badge.bundled.js"></script>
+<ms-store-badge productid="9n3b47hbvblc" size="large" style="margin: 30px auto 0; width: fit-content;"></ms-store-badge>
 
 <script>
 	function lightTheme() {
